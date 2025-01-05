@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C897FA
+}
+/* Estilos generales */
+
+  /* Barra superior */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #818080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    max-height: 70px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene las proporciones */
+  }
+  
+  /* Menú de navegación */
+  .navbar .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar .menu a:hover {
+    color: violet;
+  }
+  
+  /* Íconos */
+  .navbar .icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar .icons a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .derecha {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #818080;
+    color: white;
+    text-align: end;
+    z-index: 1000;
+}
+.logoig {
+    width: 50px;
+    margin: 10px;
+    height: 50px;
+    display: inline-block;
+    object-fit: contain;
+    
+}
+.grande {
+    font-size: 100px;
+}
