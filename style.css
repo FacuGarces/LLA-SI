@@ -80,6 +80,24 @@ body {
     font-size: 100px;
 }
 
-main {
-  margin-top: 90px;
+.conteiner {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 81px
 }
+
+.conteiner img {
+  margin-top: 10px;
+  background-color: #ef43ff;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 4px;
+  transition: box-shadow 0.2s ease;
+
+}
+.conteiner img:hover {
+  box-shadow: 0 0.1rem 0.4rem black ;
+}
+
+
+
