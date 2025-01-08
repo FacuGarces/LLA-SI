@@ -79,3 +79,15 @@ header {
         color: lightgray;
     }
 }
+
+@media screen and (max-width: 768px) {
+    /* Mostrar los botones de menú en móviles */
+    .abrir-menu,
+    .cerrar-menu {
+        font-size: 4rem;    
+    }
+    /* Ajustar el tamaño del logo */
+    .logo {
+        max-width: 15rem;
+    }
+}
