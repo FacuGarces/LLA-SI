@@ -34,7 +34,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen  {
     .abrir-menu,
     .cerrar-menu {
         display: block;
