@@ -80,14 +80,14 @@ header {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     /* Mostrar los botones de menú en móviles */
     .abrir-menu,
     .cerrar-menu {
-        font-size: 4rem;    
+        font-size: 3rem;    
     }
     /* Ajustar el tamaño del logo */
     .logo {
-        max-width: 15rem;
+        max-width: 12rem;
     }
 }
