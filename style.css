@@ -11,11 +11,11 @@ header {
     display: Flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #9d4fb3;
 }
 .logo {
-    max-width: 5rem;
+    max-width: 9rem;
 }
 
 .nav-list {
