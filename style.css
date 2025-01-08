@@ -1,117 +1,81 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #C897FA
+    background-color: lightgray;
 }
-/* Estilos generales */
-
-  /* Barra superior */
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #818080;
-    color: white;
-    display: flex;
-    justify-content: space-between;
+header {
+    display: Flex;
     align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-  }
-  
-  /* Logo */
-  .navbar .logo {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    max-height: 70px; /* Ajusta el tamaño máximo de la imagen */
-    height: auto; /* Mantiene las proporciones */
-  }
-  
-  /* Menú de navegación */
-  .navbar .menu {
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #9d4fb3;
+}
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
     display: flex;
-    gap: 20px;
-  }
-  
-  .navbar .menu a {
-    color: white;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.nav-list li a {
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  .navbar .menu a:hover {
-    color: violet;
-  }
-  
-  /* Íconos */
-  .navbar .icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navbar .icons a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  .barrainferior {
-    position: relative; 
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #818080;
-    color: white;
-    text-align: end;
-    z-index: 1000;
-}
-.logoig {
-    width: 50px;
-    margin: 10px;
-    height: 50px;
-    display: inline-block;
-    object-fit: contain;
-    
-}
-section article img  {
-  width: 400px;
-  
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: #525252;
-  padding-bottom: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+    color: black;
 }
 
-section article img:hover {
-  transform: translateY(-10px); /* Eleva la imagen */
-  box-shadow: 7px 7px 10px black; /* Agrega sombra */
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
-.conteiner {
-  display: flex;
-  margin-top: 120px;
-  align-items: center;
-}
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    .abrir-menu{
+        color: black;
+    }
+    .cerrar-menu {
+        color: white;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #510180;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
 
-#TextoBoletin {
-  font-family: "League Spartan";
-  font-size: large;
-  background-color: lightgray;
-  padding: 20px;
-  border-radius: 20px;
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list li a {
+        text-decoration: none;
+        color: lightgray;
+    }
 }
-

@@ -1,41 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title id = "inicio">LLA SI</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
-        <img src = "Sources/logo.png" class = "logo">
-        <nav class = "menu">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
+    <header>
+        <img src ="./Sources/logo.png" alt = "Logo" class="logo">
+        <button id= "abrir"class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="#"> Inicio</a></li>
+                <li><a href="#"> Fiscalización</a></li>
+                <li><a href="#"> Sumate a la Juventud</a></li>
+                <li><a href="#"> Sumate al Equipo</a></li>
+                <li> <a href="#"> Redes Sociales</a></li>
+            </ul>
         </nav>
-    <section>
-    </section>
     </header>
 
-    <section class="conteiner">
-        <article id = "boletin">
-                <a href="Sources/BoletinLLA.pdf" target="_blank">  
-                    <img src = "Sources/boletinoficial.png">
-                </a>
-        </article>
-        <p id = "TextoBoletin"> BOLETIN SEMANAL DONDE DESCRIBIMOS DE MANERA DETALLADA LOS RESULTADOS, OBJETIVOS Y COMUNICADOS IMPORTANTES DE LA SEMANA.</p>
-    </section>
 
-    <footer>
-        <section class="barrainferior">
-            <a href="https://www.instagram.com/la_libertad_avanza_san_isidro_/" target="_blank">
-            <img src = "Sources/Instagram.png" class = "logoig">
-            </a>
-            <a href=https://chat.whatsapp.com/KjfvD5KBEhu8LXddeevnG0 target="_blank">
-                <img src = "Sources/whatsapp.png" class = "logoig">
-            </a>
-        </section>
-    </footer>
+
+    <script src = "./js.js"></script>
 </body>
-</html> 
-
+</html>
