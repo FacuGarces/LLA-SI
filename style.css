@@ -91,3 +91,28 @@ header {
         max-width: 12rem;
     }
 }
+
+/* Estilo para el contenedor del slider */
+.banner-slider {
+    width: 100vw;              /* 100% del ancho de la ventana (viewport) */
+    height: 150px;             /* Ajusta el alto del banner */
+    overflow: hidden;          /* Oculta cualquier contenido fuera del contenedor */
+    position: relative;        /* Necesario para posicionar las imágenes dentro */
+    margin: 0;                 /* Elimina márgenes si los hay */
+    padding: 0;                /* Elimina rellenos si los hay */
+    margin-bottom: 0;          /* Esto hay q cambiarlo cuando agregue lo de abajo */
+  }
+  
+  /* Estilo para el contenedor de imágenes */
+  .slide {
+    display: flex;             /* Coloca las imágenes en línea horizontal */
+    width: 300%;               /* El ancho total será el de 3 imágenes (100% * 3) */
+    transition: transform 1s ease-in-out; /* Transición suave entre las imágenes */
+  }
+  
+  .slide img {
+    width: 100vw;              /* Cada imagen ocupa un 100% del ancho de la ventana */
+    height: 100%;
+    object-fit: cover;         /* Hace que la imagen cubra el espacio sin distorsionarse */
+  }
+  
