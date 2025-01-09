@@ -116,4 +116,14 @@ header {
     height: 100%;
     object-fit: cover;         /* Hace que la imagen cubra el espacio sin distorsionarse */
   }
-  
+
+footer{
+    background-color: #9d4fb3;
+    text-align: end;
+    padding: 1rem;
+}
+.conteiner-all{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
