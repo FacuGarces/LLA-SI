@@ -96,7 +96,7 @@ header {
 /* Estilo para el contenedor del slider */
 .banner-slider {
     width: 100vw;              /* 100% del ancho de la ventana (viewport) */
-    height: 150px;             /* Ajusta el alto del banner */
+    height: 300px;             /* Ajusta el alto del banner */
     overflow: hidden;          /* Oculta cualquier contenido fuera del contenedor */
     position: relative;        /* Necesario para posicionar las imágenes dentro */
     margin: 0;                 /* Elimina márgenes si los hay */
