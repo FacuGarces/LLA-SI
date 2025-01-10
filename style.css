@@ -71,13 +71,17 @@ header {
         background-color: #510180;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        transition: transform 0.3s ease, opacity 0.3s ease;
         z-index: 100;
+        transition: transform 0.5s ease, opacity 0.3s ease, visibility 0s 0.3s; /* Esta línea */
+        transform: translateX(100%); /* Esta línea */
+
     }
 
     .nav.visible {
         opacity: 1;
         visibility: visible;
+        transform: translateX(0); /* Esta línea */
+
     }
     .nav-list {
         flex-direction: column;
