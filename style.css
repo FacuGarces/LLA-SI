@@ -148,6 +148,7 @@ footer{
     padding: 1.5rem; /* Espaciado reducido para acercar al banner */
     flex: 1;
     cursor: pointer;
+    margin-top: -28.5rem;
   }
   .box > div:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -203,3 +204,8 @@ a {
     justify-content: center;
     align-items: center;
   }
+  @media screen and (max-width: 900px) {
+    .box {
+      margin-top: -14.5rem; 
+    }
+}
