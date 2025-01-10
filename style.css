@@ -131,3 +131,75 @@ footer{
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+.header {
+    background-color: purple;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 20%;
+  }
+  .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ahora admite 4 columnas */
+    gap: 1.5rem;
+    background-color: lightgray;
+    padding: 1.5rem; /* Espaciado reducido para acercar al banner */
+    flex: 1;
+    cursor: pointer;
+  }
+  .box > div:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-10px); /* Levanta el elemento */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 1); /* Sombra detrás */
+}
+  
+  .box > div {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 350px; /* Altura fija para los artículos */
+    overflow-y: auto;
+  }
+  
+  .box h2 {
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .box p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    text-align: justify;
+  }
+  .pdf-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Elimina el relleno del botón */
+    border: none;
+    background-color: transparent; /* Fondo transparente para el botón */
+    cursor: pointer;
+    width: auto; /* Asegura que el botón se ajuste solo al tamaño del ícono */
+    height: auto; /* Lo mismo para la altura */
+    margin-top: 1.5rem;
+  }
+  
+  .pdf-button i {
+    font-size: 7rem; /* Aumenta el tamaño del ícono */
+  }
+a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    display: inline-flex; /* Asegura que el enlace no afecte el flujo del diseño */
+    justify-content: center;
+    align-items: center;
+  }
