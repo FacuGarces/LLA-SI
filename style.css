@@ -102,13 +102,15 @@ header {
     margin: 0;                 /* Elimina márgenes si los hay */
     padding: 0;                /* Elimina rellenos si los hay */
     margin-bottom: 0;          /* Esto hay q cambiarlo cuando agregue lo de abajo */
-  }
+    object-fit: cover;
+    }
   
   /* Estilo para el contenedor de imágenes */
   .slide {
     display: flex;             /* Coloca las imágenes en línea horizontal */
     width: 300%;               /* El ancho total será el de 3 imágenes (100% * 3) */
     transition: transform 1s ease-in-out; /* Transición suave entre las imágenes */
+    
   }
   
   .slide img {
