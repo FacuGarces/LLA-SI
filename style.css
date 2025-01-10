@@ -123,7 +123,7 @@ header {
 
 footer{
     background-color: #9d4fb3;
-    text-align: center;
+    text-align: end;
     padding: 1rem;
 }
 .conteiner-all{
@@ -203,6 +203,9 @@ a {
     justify-content: center;
     align-items: center;
   }
+  .movile {
+    display: none;
+  }
   @media screen and (max-width: 900px) {
     .box {
       margin-top: -14.5rem; 
@@ -210,5 +213,9 @@ a {
     footer {
       padding: 0.7rem;
       font-size: small;
+      text-align: center;
+    }
+    .movile {
+      display: block;
     }
 }
