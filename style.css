@@ -157,7 +157,7 @@ footer{
     background-color: lightgray;
     padding: 1.5rem; /* Espaciado reducido para acercar al banner */
     flex: 1;
-    margin-top: -28.5rem;
+    margin-top: -28rem;
   }
   .box > div:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
