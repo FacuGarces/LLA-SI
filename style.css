@@ -17,6 +17,14 @@ header {
 .logo {
     max-width: 9rem;
 }
+.logo-container {
+  background-color: white; /* Fondo blanco */
+  padding: 10px; /* Espaciado para que la caja sea más grande que el logo */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+  display: flex; /* Asegura que el logo se mantenga centrado */
+  align-items: center;
+  justify-content: center;
+}
 
 .nav-list {
     display: flex;
@@ -44,7 +52,7 @@ header {
         cursor: pointer;
     }
     .abrir-menu{
-        color: black;
+        color: white;
     }
     .cerrar-menu {
         color: white;
@@ -123,8 +131,10 @@ header {
 
 footer{
     background-color: #9d4fb3;
-    text-align: end;
+    text-align: center;
     padding: 1rem;
+    color: white;
+    word-spacing: 0.5px;
 }
 .conteiner-all{
     min-height: 100vh;
