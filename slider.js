@@ -8,7 +8,7 @@ function nextSlide() {
   currentIndex = (currentIndex + 1) % (totalImages); // Este operador hace que vuelva al inicio cuando llega al final
   
   // Calcula el desplazamiento basado en el índice actual
-  const offset = -33.3333 * currentIndex; // El desplazamiento es un múltiplo de 100%
+  const offset = -33.333 * currentIndex; // El desplazamiento es un múltiplo de 100%
 
   // Aplica la transformación para mover las imágenes
   slides.style.transform = `translateX(${offset}%)`;

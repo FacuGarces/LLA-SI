@@ -117,7 +117,9 @@ header {
     width: 100vw;              /* Cada imagen ocupa un 100% del ancho de la ventana */
     height: 100%;
     object-fit: cover;         /* Hace que la imagen cubra el espacio sin distorsionarse */
-  }
+    object-position: center;
+    }
+
 
 footer{
     background-color: #9d4fb3;
