@@ -42,54 +42,57 @@ header {
     display: none;
 }
 
-@media screen  {
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        font-size: 2rem;
-        cursor: pointer;
-    }
-    .abrir-menu{
-        color: white;
-    }
-    .cerrar-menu {
-        color: white;
-    }
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #510180;
-        border-radius: 20px 0 0 20px;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        z-index: 100;
-        transition: opacity 0.5s ease, visibility 0.5s;  /* Animación de entrada y salida del menú*/
-    }
 
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.4s ease;
-    }
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-    }
-    .nav-list li a {
-        text-decoration: none;
-        color: lightgray;
-    }
+.abrir-menu,
+.cerrar-menu {
+display: block;
+border: 0;
+background-color: transparent;
+font-size: 2rem;
+cursor: pointer;
 }
+
+.abrir-menu{
+  color: white;
+}
+.cerrar-menu {
+  color: white;
+}
+.nav {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #510180;
+  border-radius: 20px 0 0 20px;
+  padding: 2rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  z-index: 100;
+  transition: opacity 0.5s ease, visibility 0.5s;  /* Animación de entrada y salida del menú*/
+  }
+
+.nav.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease;
+}
+
+.nav-list {
+  flex-direction: column;
+  align-items: end;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: lightgray;
+}
+
 
 @media screen and (max-width: 900px) {
     /* Mostrar los botones de menú en móviles */
