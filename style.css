@@ -94,7 +94,7 @@ cursor: pointer;
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     /* Mostrar los botones de menú en móviles */
     .abrir-menu,
     .cerrar-menu {
@@ -221,7 +221,7 @@ a {
   .movile {
     display: none;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 768px) {
     .box {
       margin-top: -14.5rem; 
     }
@@ -233,4 +233,13 @@ a {
     .movile {
       display: block;
     }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) { /* Resoluciones intermedias */
+  .banner-slider {
+      height: 40vh; /* Ajusta el alto del slider en pantallas intermedias */
+  }
+  
+  .box {
+      margin-top: 2rem; /* Añade más espacio si es necesario */
+  }
 }
