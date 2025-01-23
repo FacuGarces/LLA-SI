@@ -221,6 +221,8 @@ a {
       gap: 0.5rem;
       padding: 0.5rem;
       margin-top: -13rem;
+      margin-left: 1rem;  /* Agregar margen izquierdo */
+      margin-right: 1rem; /* Agregar margen derecho */
   }
 
   footer {
