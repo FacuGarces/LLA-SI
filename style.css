@@ -1,63 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
+
 body {
-    background-color: lightgray;
+  background-color: lightgray;
+  margin: 0;
 }
+
 header {
-    display: Flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #9d4fb3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #9d4fb3;
 }
+
 .logo {
-    max-width: 9rem;
+  max-width: 9rem;
 }
+
 .logo-container {
-  background-color: white; /* Fondo blanco */
-  padding: 10px; /* Espaciado para que la caja sea más grande que el logo */
-  border-radius: 8px; /* Bordes redondeados opcionales */
-  display: flex; /* Asegura que el logo se mantenga centrado */
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .nav-list {
-    display: flex;
-    list-style-type: none;
-    gap: 1rem;
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
 }
 
 .nav-list li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .abrir-menu,
 .cerrar-menu {
-    display: none;
+  display: none;
 }
-
 
 .abrir-menu,
 .cerrar-menu {
-display: block;
-border: 0;
-background-color: transparent;
-font-size: 2rem;
-cursor: pointer;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-.abrir-menu{
+.abrir-menu {
   color: white;
 }
+
 .cerrar-menu {
   color: white;
 }
+
 .nav {
   opacity: 0;
   visibility: hidden;
@@ -74,8 +80,8 @@ cursor: pointer;
   padding: 2rem;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
   z-index: 100;
-  transition: opacity 0.5s ease, visibility 0.5s;  /* Animación de entrada y salida del menú*/
-  }
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
 
 .nav.visible {
   opacity: 1;
@@ -93,153 +99,138 @@ cursor: pointer;
   color: lightgray;
 }
 
+@media screen and (max-width: 900px) {
+  .abrir-menu,
+  .cerrar-menu {
+      font-size: 3rem;
+  }
 
-@media screen and (max-width: 768px) {
-    /* Mostrar los botones de menú en móviles */
-    .abrir-menu,
-    .cerrar-menu {
-        font-size: 3rem;    
-    }
-    /* Ajustar el tamaño del logo */
-    .logo {
-        max-width: 12rem;
-    }
+  .logo {
+      max-width: 12rem;
+  }
 }
 
-/* Estilo para el contenedor del slider */
 .banner-slider {
-    width: 100vw;              /* 100% del ancho de la ventana (viewport) */
-    height: 300px;             /* Ajusta el alto del banner */
-    overflow: hidden;          /* Oculta cualquier contenido fuera del contenedor */
-    position: relative;        /* Necesario para posicionar las imágenes dentro */
-    margin: 0;                 /* Elimina márgenes si los hay */
-    padding: 0;                /* Elimina rellenos si los hay */
-    margin-bottom: 0;          /* Esto hay q cambiarlo cuando agregue lo de abajo */
-    object-fit: cover;
-    }
-  
-  /* Estilo para el contenedor de imágenes */
-  .slide {
-    display: flex;             /* Coloca las imágenes en línea horizontal */
-    width: 300%;               /* El ancho total será el de 3 imágenes (100% * 3) */
-    transition: transform 1s ease-in-out; /* Transición suave entre las imágenes */
-    
-  }
-  
-  .slide img {
-    width: 100vw;              /* Cada imagen ocupa un 100% del ancho de la ventana */
-    height: 100%;
-    object-fit: cover;         /* Hace que la imagen cubra el espacio sin distorsionarse */
-    object-position: center;
-    }
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem; /* Espaciado uniforme debajo */
+  object-fit: cover;
+}
 
+.slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
-footer{
-    background-color: #9d4fb3;
-    text-align: center;
-    padding: 1rem;
-    color: white;
-    word-spacing: 0.5px;
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
-.conteiner-all{
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+
+footer {
+  background-color: #9d4fb3;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  word-spacing: 0.5px;
 }
-.header {
-    background-color: purple;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    height: 20%;
-  }
-  .box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ahora admite 4 columnas */
-    gap: 1.5rem;
-    background-color: lightgray;
-    padding: 1.5rem; /* Espaciado reducido para acercar al banner */
-    flex: 1;
-    margin-top: -28rem;
-  }
-  .box > div:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: translateY(-10px); /* Levanta el elemento */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 1); /* Sombra detrás */
+
+.conteiner-all {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 0;
 }
-  
-  .box > div {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 350px; /* Altura fija para los artículos */
-    overflow-y: auto;
-  }
-  
-  .box h2 {
-    margin: 0 0 1rem;
-    font-size: 1.8rem;
-    color: #333;
-  }
-  
-  .box p {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    text-align: justify;
-  }
-  .pdf-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0; /* Elimina el relleno del botón */
-    border: none;
-    background-color: transparent; /* Fondo transparente para el botón */
-    cursor: pointer;
-    width: auto; /* Asegura que el botón se ajuste solo al tamaño del ícono */
-    height: auto; /* Lo mismo para la altura */
-    margin-top: 1.5rem;
-  }
-  
-  .pdf-button i {
-    font-size: 7rem; /* Aumenta el tamaño del ícono */
-  }
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem; /* Espaciado uniforme entre artículos */
+  background-color: lightgray;
+  padding: 1rem; /* Espaciado interno uniforme */ 
+}
+
+.box > div:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 1);
+}
+
+.box > div {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 330px;
+  overflow-y: auto;
+  margin-bottom: 2rem;
+}
+
+.box h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.box p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  text-align: justify;
+}
+
+.pdf-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.pdf-button i {
+  font-size: 7rem;
+}
+
 a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    display: inline-flex; /* Asegura que el enlace no afecte el flujo del diseño */
-    justify-content: center;
-    align-items: center;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .box {
+      gap: 0.5rem;
+      padding: 0.5rem;
+      margin-top: -13rem;
   }
-  .movile {
-    display: none;
-  }
-  @media screen and (max-width: 768px) {
-    .box {
-      margin-top: -14.5rem; 
-    }
-    footer {
+
+  footer {
       padding: 0.7rem;
       font-size: small;
       text-align: center;
-    }
-    .movile {
+  }
+
+  .movile {
       display: block;
-    }
-}
-@media screen and (max-width: 1200px) and (min-width: 768px) { /* Resoluciones intermedias */
-  .banner-slider {
-      height: 40vh; /* Ajusta el alto del slider en pantallas intermedias */
-  }
-  
-  .box {
-      margin-top: 2rem; /* Añade más espacio si es necesario */
   }
 }
+
