@@ -188,30 +188,6 @@ footer {
   text-align: justify;
 }
 
-.pdf-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  width: auto;
-  height: auto;
-  margin-top: 1rem;
-}
-
-.pdf-button i {
-  font-size: 7rem;
-}
-
-a {
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .movile {
   display: none;
 }
@@ -236,3 +212,20 @@ a {
   }
 }
 
+.box h2 {
+  text-align: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Alinea hacia la parte inferior */
+  height: 100%; /* Ocupa todo el espacio del contenedor */
+  padding: 1rem;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #371859; /* Ajusta el color del ícono según tu diseño */
+  font-size: 7rem; /* Tamaño del ícono */
+}
