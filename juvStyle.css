@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    background-color: lightgray;
+    margin: 0;
+  }
+
+  .conteiner-all {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #371859;
+  }
+  
+  .logo {
+    max-width: 9rem;
+  }
+  
+  .logo-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .abrir-menu,
+  .cerrar-menu {
+    display: none;
+  }
+  
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .abrir-menu {
+    color: white;
+  }
+  
+  .cerrar-menu {
+    color: white;
+  }
+  
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #230552;
+    border-radius: 20px 0 0 20px;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    z-index: 100;
+    transition: opacity 0.5s ease, visibility 0.5s;
+  }
+  
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: lightgray;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .abrir-menu,
+    .cerrar-menu {
+        font-size: 3rem;
+    }
+  
+    .logo {
+        max-width: 12rem;
+    }
+  }
+
+  .bio-container {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    background-color: #230552;
+  }
+  
+  .bio-image img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: white; /* Fondo rosa solo en el texto */
+    padding: 1rem;
+    border-radius: 10px; /* Opcional: agrega un borde redondeado al fondo */
+  }
+  
+  .bio-text h2 {
+    font-size: 1.5rem;
+    color: #371859;
+  }
+  
+  .bio-text p {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  footer {
+    background-color: #371859;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    word-spacing: 0.5px;
+  }
+.sumate-juv {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-align: center; /* Centra el texto */
+    gap: 1.5rem; /* Añade espacio entre los elementos */
+    padding: 2rem;
+    background-color: gray; /* Fondo para la sección */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un poco de profundidad */
+}
+
+.sumate-juv h1 {
+    font-size: 2rem;
+    color: white; /* Color blanco para el título */
+}
+
+.sumate-juv p {
+    font-size: 1.2rem;
+    color: white; /* Color gris claro para el texto */
+    max-width: 600px; /* Limita el ancho del párrafo para mejor lectura */
+}
+
+.sumate-juv button {
+    padding: 1rem 2rem; /* Ajusta el tamaño del botón */
+    background-color: #371859; /* Color de fondo del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.sumate-juv button a {
+    color: white; /* Establece el color del texto del enlace dentro del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+
+.sumate-juv button:hover {
+    background-color: #230552; /* Color más oscuro al pasar el cursor */
+}
+
+.sumate-juv img {
+    max-width: 500px; /* Limita el tamaño de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la imagen */
+}
+
+.movile {
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    /* Elimina cualquier espacio o margen extra de los elementos principales */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .conteiner-all {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del layout a columna */
+        align-items: center; /* Centra los elementos en el contenedor */
+        padding: 0;
+        margin: 0; /* Elimina márgenes extra */
+        height: 100%; /* Asegura que el contenedor ocupe toda la pantalla */
+    }
+  
+    header {
+        width: 100%;
+        flex-direction: row; /* Asegura que el header sea en columna en pantallas pequeñas */
+        align-items: center; /* Centra el contenido dentro del header */
+        padding: 1rem;
+        margin-bottom: 0; /* Elimina cualquier margen que podría estar afectando el espaciado */
+    }
+  
+    .bio-container {
+        display: flex;
+        flex-direction: column; /* Organiza el contenido de la biografía en columnas */
+        align-items: center; /* Centra la imagen y el texto */
+        gap: 1rem;
+        padding: 1rem;
+        margin: 0; /* Elimina márgenes extra */
+        flex-grow: 1; /* Asegura que esta sección crezca y ocupe el espacio disponible */
+    }
+  
+    .bio-image img {
+        max-width: 100%; /* Asegura que la imagen no se desborde */
+        width: 200px; /* Ajusta el tamaño de la imagen para que no sea muy grande */
+        margin-bottom: 0; /* Elimina el margen inferior */
+    }
+
+    .sumate-juv {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna */
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0; /* Elimina cualquier margen superior */
+        margin-bottom: 0; /* Elimina cualquier margen inferior */
+    }
+
+    .sumate-img {
+        margin-bottom: -0.95rem;
+    }
+
+    .sumate-juv h1, .sumate-juv p {
+        text-align: center;
+        width: 90%;
+        box-sizing: border-box;
+        margin-bottom: 0; /* Asegura que no haya espacio después del texto */
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: small;
+        text-align: center;
+        margin-top: 0; /* Elimina cualquier margen superior */
+        margin-bottom: 0; /* Elimina cualquier margen inferior */
+        width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        font-size: 3rem;
+    }
+
+    .logo {
+        max-width: 12rem;
+    }
+
+    .nav-list {
+        flex-direction: column; /* Organiza los elementos del menú en columnas */
+        align-items: center; /* Centra los enlaces del menú */
+    }
+  
+    .nav-list li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .movile {
+        display: block;
+    }
+}
