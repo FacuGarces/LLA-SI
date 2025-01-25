@@ -159,6 +159,7 @@
     color: white;
     word-spacing: 0.5px;
   }
+
 .sumate-juv {
     display: flex;
     flex-direction: column; /* Alinea los elementos en columna */
@@ -201,9 +202,11 @@
 }
 
 .sumate-juv img {
-    max-width: 500px; /* Limita el tamaño de la imagen */
+    max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    width: 100%; /* Se asegura de que ocupe el 100% del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .movile {
@@ -264,10 +267,6 @@
         margin-bottom: 0; /* Elimina cualquier margen inferior */
     }
 
-    .sumate-img {
-        margin-bottom: -0.95rem;
-    }
-
     .sumate-juv h1, .sumate-juv p {
         text-align: center;
         width: 90%;
@@ -286,24 +285,12 @@
 
     .abrir-menu,
     .cerrar-menu {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .logo {
-        max-width: 12rem;
+        max-width: 9rem;
     }
-
-    .nav-list {
-        flex-direction: column; /* Organiza los elementos del menú en columnas */
-        align-items: center; /* Centra los enlaces del menú */
-    }
-  
-    .nav-list li a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.2rem;
-    }
-
     .movile {
         display: block;
     }
