@@ -112,10 +112,10 @@ header {
 
 .banner-slider {
   width: 100%;
-  height: 280px;
+  height: auto;
   overflow: hidden;
   position: relative;
-  margin-bottom: 1rem; /* Espaciado uniforme debajo */
+  margin-bottom: 0; /* Espaciado uniforme debajo */
   object-fit: cover;
 }
 
@@ -129,6 +129,13 @@ header {
   height: auto;
   object-fit: cover;
   object-position: center;
+}
+
+.linea{
+  width: 100%;
+  height: 4px; /* Grosor de la línea */
+  background-color: #371859; 
+  position: relative;
 }
 
 footer {
@@ -196,9 +203,9 @@ footer {
   .box {
       gap: 0.5rem;
       padding: 0.5rem;
-      margin-top: -13rem;
-      margin-left: 1rem;  /* Agregar margen izquierdo */
-      margin-right: 1rem; /* Agregar margen derecho */
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
   }
 
   footer {
@@ -210,6 +217,15 @@ footer {
   .movile {
       display: block;
   }
+
+  .linea-roja {
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner-slider {
+        margin: 0;
+    }
 }
 
 .box h2 {
@@ -227,5 +243,30 @@ footer {
 .icon-link {
   text-decoration: none;
   color: #371859; /* Ajusta el color del ícono según tu diseño */
-  font-size: 7rem; /* Tamaño del ícono */
+  font-size: 7rem; /* Tamaño del ícono */ 
 }
+
+@media screen and (max-width: 900px) {
+  .box > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra el contenido verticalmente */
+      align-items: center; /* Centra el contenido horizontalmente */
+      padding: 1rem; /* Espaciado interno */
+  }
+
+  .icon-link {
+      display: flex; /* El enlace es un contenedor flexible */
+      flex-direction: column; /* Alinea el contenido verticalmente */
+      justify-content: space-between; /* Distribuye espacio entre los elementos */
+      align-items: center; /* Centra los elementos horizontalmente */
+      text-decoration: none; /* Elimina el subrayado */
+      width: 100%; /* Asegura que el enlace cubra todo el ancho del box */
+      height: 100%; /* Asegura que el enlace cubra toda la altura del box */
+  }
+
+  .icon-container {
+      margin-bottom: 3rem; /* Espaciado entre el ícono y el texto */
+  }
+}
+
