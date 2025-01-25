@@ -263,6 +263,7 @@ footer {
       text-decoration: none; /* Elimina el subrayado */
       width: 100%; /* Asegura que el enlace cubra todo el ancho del box */
       height: 100%; /* Asegura que el enlace cubra toda la altura del box */
+      outline: none;
   }
 
   .icon-container {
