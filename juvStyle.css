@@ -203,7 +203,7 @@
 
 .sumate-juv img {
     max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
-    width: 40%; /* Se asegura de que ocupe el 100% del contenedor */
+    width: 80%; /* Se asegura de que ocupe el 100% del contenedor */
     height: auto; /* Mantiene las proporciones de la imagen */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
