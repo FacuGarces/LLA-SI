@@ -244,32 +244,17 @@ footer {
   text-decoration: none;
   color: #371859; /* Ajusta el color del ícono según tu diseño */
   font-size: 7rem; /* Tamaño del ícono */ 
+  width: 100%;
+}
+.icon-container i {
+  margin-bottom: 3rem;
+}
+.box > div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
-@media screen and (max-width: 900px) {
-  .box > div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Centra el contenido verticalmente */
-      align-items: center; /* Centra el contenido horizontalmente */
-      padding: 1rem; /* Espaciado interno */
-  }
-
-  .icon-link {
-      display: flex; /* El enlace es un contenedor flexible */
-      flex-direction: column; /* Alinea el contenido verticalmente */
-      justify-content: space-between; /* Distribuye espacio entre los elementos */
-      align-items: center; /* Centra los elementos horizontalmente */
-      text-decoration: none; /* Elimina el subrayado */
-      width: 100%; /* Asegura que el enlace cubra todo el ancho del box */
-      height: 100%; /* Asegura que el enlace cubra toda la altura del box */
-  }
-  .icon-link:focus {
-      outline: none; /* Elimina el contorno al hacer clic */
-  }
-
-  .icon-container {
-      margin-bottom: 3rem; /* Espaciado entre el ícono y el texto */
-  }
-}
 
