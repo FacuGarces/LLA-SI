@@ -183,6 +183,13 @@
     max-width: 600px; /* Limita el ancho del párrafo para mejor lectura */
 }
 
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 1rem; /* Espacio entre los botones */
+  flex-wrap: wrap; /* Permite que los botones se muevan a una nueva línea si el espacio es limitado */
+}
+
 .sumate-juv button {
     padding: 1rem 2rem; /* Ajusta el tamaño del botón */
     background-color: #371859; /* Color de fondo del botón */
@@ -190,6 +197,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  
 }
 .sumate-juv button a {
     color: white; /* Establece el color del texto del enlace dentro del botón */
