@@ -293,11 +293,11 @@
 
     .abrir-menu,
     .cerrar-menu {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .logo {
-        max-width: 9rem;
+        max-width: 12rem;
     }
     .movile {
         display: block;

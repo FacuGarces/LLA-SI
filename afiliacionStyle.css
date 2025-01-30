@@ -266,12 +266,12 @@
 }
 
   .logo {
-    max-width: 9rem;
+    max-width: 12rem;
   }
 
   .abrir-menu,
   .cerrar-menu {
-        font-size: 2rem;
+        font-size: 3rem;
     }
   
   .movile {
