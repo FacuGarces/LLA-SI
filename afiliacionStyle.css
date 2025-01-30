@@ -11,10 +11,11 @@
   }
 
   .conteiner-all {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    padding: 0;
+      min-height: 100vh; /* Esto asegura que la altura mínima sea 100% de la pantalla */
+      display: grid;
+      grid-template-rows: auto 1fr auto; /* Esto hace que el footer ocupe la última fila */
+      padding: 0;
+      position: relative; /* Para poder colocar el footer en la parte inferior */
   }
 
   header {
@@ -117,56 +118,177 @@
   .movile {
     display: none;
   }
-  @media screen and (max-width: 900px) {
-    .abrir-menu,
-    .cerrar-menu {
-        font-size: 3rem;
-    }
-  
-    .logo {
-        max-width: 12rem;
-    }
-    /* Elimina cualquier espacio o margen extra de los elementos principales */
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
+  .text-all-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 2rem; /* Espacio entre los bloques */
+    padding: 20px;
+    justify-items: center; /* Centra los bloques dentro de cada celda */
+    background-color: #2f0163;
+}
 
-    .conteiner-all {
-        display: flex;
-        flex-direction: column; /* Cambia la dirección del layout a columna */
-        align-items: center; /* Centra los elementos en el contenedor */
-        padding: 0;
-        margin: 0; /* Elimina márgenes extra */
-        height: 100%; /* Asegura que el contenedor ocupe toda la pantalla */
-    }
-  
-    header {
-        width: 100%;
-        flex-direction: row; /* Asegura que el header sea en columna en pantallas pequeñas */
-        align-items: center; /* Centra el contenido dentro del header */
-        padding: 1rem;
-        margin-bottom: 0; /* Elimina cualquier margen que podría estar afectando el espaciado */
-    }
-    footer {
-        padding: 1rem;
-        font-size: small;
-        text-align: center;
-        margin-top: 0; /* Elimina cualquier margen superior */
-        margin-bottom: 0; /* Elimina cualquier margen inferior */
-        width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
-    }
+.text-all-container div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa todo el ancho disponible dentro de cada celda */
+    max-width: 800px; /* Máximo ancho, para que no se estire demasiado */
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out; /* Añadir esta línea */
+}
 
-    .abrir-menu,
-    .cerrar-menu {
+
+.text-all-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.text-all-container div:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* Sombra más fuerte al pasar el cursor */
+}
+
+.sumate-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto 0;
+    border-radius: 8px;
+}
+
+.button-container {
+    margin-top: 1.5rem;
+}
+
+.sumate-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: #371859;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sumate-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.sumate-button:hover {
+    background-color: #230552;
+}
+
+.sumate-afiliacion {
+    background-color: #2f0163;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto; /* Centra el bloque */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+.sumate-afiliacion h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.sumate-afiliacion p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.sumate-img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados a la imagen */
+  margin-top: 20px;
+}
+
+.sumate-text {
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  max-width: 900px; /* Máximo ancho del cuadro blanco */
+  margin: 0 auto; /* Centra el cuadro */
+  transition: box-shadow 0.3s ease-in-out; /* Añadir esta línea */
+}
+
+.sumate-text:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* Sombra más fuerte al pasar el cursor */
+}
+
+.movile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .text-all-container {
+    grid-template-columns: 1fr; /* Una columna en lugar de dos */
+    gap: 1rem; /* Reduce el espacio entre los bloques */
+    padding: 10px;
+  }
+
+  .text-all-container div {
+    padding: 10px;
+    max-width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  }
+
+  .sumate-afiliacion {
+    padding: 20px;
+  }
+
+  .sumate-afiliacion h1 {
+    font-size: 24px;
+  }
+
+  .sumate-afiliacion p {
+    font-size: 16px;
+  }
+
+  .sumate-img {
+    max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    margin-top: 10px;
+  }
+
+  .sumate-text {
+    padding: 10px;
+    max-width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  }
+
+  header {
+    width: 100%;
+    flex-direction: row; /* Asegura que el header sea en columna en pantallas pequeñas */
+    align-items: center; /* Centra el contenido dentro del header */
+    padding: 1rem;
+    margin-bottom: 0; /* Elimina cualquier margen que podría estar afectando el espaciado */
+}
+
+  .logo {
+    max-width: 9rem;
+  }
+
+  .abrir-menu,
+  .cerrar-menu {
         font-size: 2rem;
     }
-
-    .logo {
-        max-width: 9rem;
-    }
-    .movile {
-        display: block;
-    }
+  
+  .movile {
+      display: block;
   }
+
+  .sumate-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: small;
+    text-align: center;
+    margin-top: 0; /* Elimina cualquier margen superior */
+    margin-bottom: 0; /* Elimina cualquier margen inferior */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
+}
+}
