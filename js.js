@@ -28,3 +28,34 @@ document.addEventListener("click", (event) => {
 nav.addEventListener("click", (event) => {
     event.stopPropagation();
 });
+
+function bloquearScroll() {
+    document.body.style.overflow = "hidden";
+}
+
+function habilitarScroll() {
+    document.body.style.overflow = "auto";
+}
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+    overlay.classList.add("visible");
+    bloquearScroll(); // Bloquea el scroll en móviles
+});
+
+cerrar.addEventListener("click", () => {
+    cerrarMenu();
+});
+
+function cerrarMenu() {
+    nav.classList.remove("visible");
+    overlay.classList.remove("visible");
+    habilitarScroll(); // Rehabilita el scroll cuando se cierra el menú
+}
+
+// Cierra el menú si se hace scroll
+window.addEventListener("scroll", () => {
+    if (nav.classList.contains("visible")) {
+        cerrarMenu();
+    }
+});
