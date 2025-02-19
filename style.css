@@ -175,7 +175,7 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 400px;
+  height: 350px;
   overflow-y: auto;
   margin-bottom: 2rem;
 }
@@ -263,6 +263,6 @@ footer {
 }
 
 .box-icon {
-  width: 210px;  /* Ajusta el tamaño según necesites */
+  width: 180px;  /* Ajusta el tamaño según necesites */
 }
 
