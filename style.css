@@ -168,15 +168,14 @@ footer {
 }
 
 .box > div {
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: #30115E;
   border-radius: 5px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 330px;
+  height: 400px;
   overflow-y: auto;
   margin-bottom: 2rem;
 }
@@ -184,15 +183,7 @@ footer {
 .box h2 {
   margin-bottom: 0.5rem;
   font-size: 1.8rem;
-  color: #333;
-}
-
-.box p {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #555;
-  text-align: justify;
+  color: white;
 }
 
 .movile {
@@ -242,9 +233,7 @@ footer {
 
 .icon-link {
   text-decoration: none;
-  color: #371859; /* Ajusta el color del ícono según tu diseño */
-  font-size: 7rem; /* Tamaño del ícono */ 
-  width: 100%;
+  margin-top: 0.5rem;
 }
 .icon-container i {
   margin-bottom: 3rem;
@@ -273,4 +262,7 @@ footer {
   visibility: visible;
 }
 
+.box-icon {
+  width: 210px;  /* Ajusta el tamaño según necesites */
+}
 
